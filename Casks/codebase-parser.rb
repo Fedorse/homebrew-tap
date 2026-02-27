@@ -1,14 +1,14 @@
 cask "codebase-parser" do
-  version "1.1.0"
+  version "1.1.1"
 
   if Hardware::CPU.intel?
 
     arch = "x64"
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    sha256 "ba12848dd4f48396d5632ac8bcd5136e9eba944c90d67749a717b6f0a4b46597"
   else
 
     arch = "aarch64"
-    sha256 "3924c36d216f95266d4cd80a7d72977de103069beadac8c4662a18138a4324e4"
+    sha256 "72a801878817376139811c78517b33830f91c381e8a498ef1050d625280bea78"
   end
 
   url "https://github.com/Fedorse/Codebase-parser/releases/download/v#{version}/Parser-#{version}-macOS-#{arch}.dmg"
